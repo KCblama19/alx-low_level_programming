@@ -2,6 +2,14 @@
 #include <time.h>
 /* more headers goes there */
 #include <stdio.h>
+/**
+ * main - Entry point
+ *
+ * Description: Generates a random number and
+ * determines if it is positive, zero, or negative.
+ *
+ * Return: Always 0 (Success)
+ */
 /* betty style doc for function main goes there */
 int main(void)
 {
