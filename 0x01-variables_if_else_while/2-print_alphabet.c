@@ -10,10 +10,12 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-	while ('a' <= 'z')
+	int character = 'a';
+
+	while (character <= 'z')
 	{
-		putchar('a');
-		a++;
+		putchar(character);
+		character++;
 	}
 
 	return (0);
