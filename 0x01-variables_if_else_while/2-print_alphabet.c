@@ -10,13 +10,15 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-	int character = 'a';
+	char character = 'a';
 
 	while (character <= 'z')
 	{
 		putchar(character);
 		character++;
 	}
+
+	putchar('\n');
 
 	return (0);
 }
