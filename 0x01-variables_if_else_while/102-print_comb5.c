@@ -28,11 +28,6 @@ int main(void)
 				putchar(',');
 				putchar(' ');
 				count++;
-
-				if (count % 20 == 0)
-				{
-					putchar('\n');
-				}
 			}
 		}
 	}
