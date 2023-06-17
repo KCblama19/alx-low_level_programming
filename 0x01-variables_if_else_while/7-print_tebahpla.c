@@ -12,7 +12,7 @@ int main(void)
 {
 	char reverseAlphabet;
 
-	for (reverseAlphabet = 'z'; reverseAlphabet > 'a'; reverseAlphabet--)
+	for (reverseAlphabet = 'z'; reverseAlphabet >= 'a'; reverseAlphabet--)
 	{
 		putchar(reverseAlphabet);
 	}
@@ -21,4 +21,3 @@ int main(void)
 
 	return (0);
 }
-
