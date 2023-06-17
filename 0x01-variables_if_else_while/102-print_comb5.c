@@ -23,11 +23,16 @@ int main(void)
 			putchar(digits2 / 10 + '0');
 			putchar(digits2 % 10 + '0');
 
-			if (count != 7)
+			if (digits1 != 98 || digits2 != 99)
 			{
 				putchar(',');
 				putchar(' ');
 				count++;
+
+				if (count % 20 == 0)
+				{
+					putchar('\n');
+				}
 			}
 		}
 	}
