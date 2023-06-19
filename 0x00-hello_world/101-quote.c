@@ -8,8 +8,9 @@
 
 int main(void)
 {
-	char statement[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	write(2, statement, sizeof(statement) - 1);
+	char word[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-	return 1;
+	write(2, word, sizeof(word) - 1);
+
+	return (1);
 }
