@@ -4,9 +4,12 @@
  *
  * Return: Always 0 (Success)
  */
+#include <unistd.h>
+
 int main(void)
 {
-	printf("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+	char statement[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	write(2, statement, sizeof(statement) - 1);
 
-	return (0);
+	return 1;
 }
