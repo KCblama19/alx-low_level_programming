@@ -1,13 +1,23 @@
-#include <stdio.h>
+#include "main.h"
+#include <unistd.h>
+
 /**
- * main - Entry point of the program
+ * main - prints _putchar.
  *
- * Return: Always 0 (Success)
+ * Return: 0 on success.
  */
-/* betty style doc for function main goes there */
+
 int main(void)
 {
-	printf("_putchar\n");
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 
 	return (0);
 }
