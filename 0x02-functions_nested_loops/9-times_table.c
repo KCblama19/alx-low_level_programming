@@ -28,6 +28,9 @@ void times_table(void)
 			}
 		}
 
-		printf("\n");
+		if (x9row != 9)
+		{
+			printf("\n");
+		}
 	}
 }
