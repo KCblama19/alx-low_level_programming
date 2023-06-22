@@ -4,10 +4,6 @@
 
 /**
  * print_numbers -  print from 0 to 9
- *
- * @void: return empty value
- *
- * Return: void
  */
 void print_numbers(void);
 
