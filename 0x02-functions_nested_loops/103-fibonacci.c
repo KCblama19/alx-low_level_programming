@@ -11,6 +11,7 @@ int main(void)
 	int sum = 0;
 	int firstT = 1;
 	int secondT = 2;
+	int next;
 
 	while (secondT <= 4000000)
 	{
@@ -19,9 +20,9 @@ int main(void)
 			sum += secondT;
 		}
 
-		int next = firstT + secondT;
+		next = firstT + secondT;
 
-		firstT = curr;
+		firstT = secondT;
 		secondT = next;
 	}
 
