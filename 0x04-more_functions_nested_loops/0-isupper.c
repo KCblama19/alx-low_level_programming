@@ -5,8 +5,7 @@
  *
  * @c: recieved integer value
  *
- * Return: 1 if c is uppercase
- *
+ * Return: 0 or 1
  */
 int _isupper(int c);
 
@@ -17,4 +16,6 @@ int _isupper(int c)
 		return (1);
 	else
 		return  (0);
+
+	_putchar('\n');
 }
