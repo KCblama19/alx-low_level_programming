@@ -1,9 +1,7 @@
 #include "main.h"
-#include <stdio.h>
 #include <unistd.h>
-
 /**
- * print_numbers -  print from 0 to 9
+ * print_numbers - print from 0 to 9
  */
 void print_numbers(void);
 
