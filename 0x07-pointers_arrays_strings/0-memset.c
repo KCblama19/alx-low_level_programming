@@ -7,7 +7,7 @@
  * @b: The constant byte to fill the memory with.
  * @n: The number of bytes to be filled.
  *
- * Return: Pointer to the memory area s.
+ * Return: Pointer to the memory area s and change array with new value.
  */
 char *_memset(char *s, char b, unsigned int n)
 {
@@ -16,7 +16,9 @@ char *_memset(char *s, char b, unsigned int n)
 	for (a = 0; a < n; a++)
 	{
 		s[a] = b;
+		n--;
+
 	}
 
-	return s;
+	return (s);
 }
