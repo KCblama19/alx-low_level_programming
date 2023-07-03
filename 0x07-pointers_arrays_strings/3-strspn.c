@@ -2,15 +2,15 @@
 
 /**
  * _strspn - Gets the length of a prefix substring.
- * @s: Pointer to the string to be scanned.
- * @accept: Pointer to the string containing the characters to match.
+ * @s: Pointer to the string to be searched.
+ * @accept: Pointer to the string containing the bytes to search for.
  *
  * Return: The number of bytes in the initial segment of s which consist only
  *         of bytes from accept.
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int counts = 0;
+	unsigned int count = 0;
 	int locate;
 
 	while (*s != '\0')
@@ -20,7 +20,7 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (*s == *accept)
 			{
-				counts++;
+				count++;
 				locate = 1;
 				break;
 			}
@@ -29,8 +29,8 @@ unsigned int _strspn(char *s, char *accept)
 		if (locate == 0)
 			break;
 		s++;
-		accept = accept - counts;
+		accept -= count;
 	}
 
-	return (counts);
+	return (count);
 }
