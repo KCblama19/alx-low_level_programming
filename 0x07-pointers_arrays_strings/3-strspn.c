@@ -20,7 +20,7 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (*s == *accept)
 			{
-				count++;
+				counts++;
 				locate = 1;
 				break;
 			}
@@ -29,8 +29,8 @@ unsigned int _strspn(char *s, char *accept)
 		if (locate == 0)
 			break;
 		s++;
-		accept = accept - count;
+		accept = accept - counts;
 	}
 
-	return (count);
+	return (counts);
 }
