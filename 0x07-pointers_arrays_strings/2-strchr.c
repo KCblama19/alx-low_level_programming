@@ -4,7 +4,7 @@
  * @s: Pointer to the string to be searched.
  * @c: Character to be located.
  *
- * Return: Always 0 (success)
+ * Return: Always 0 (Success)
  */
 char *_strchr(char *s, char c)
 {
