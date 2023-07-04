@@ -4,29 +4,24 @@
  * @haystack: Pointer to the string to search within.
  * @needle: Pointer to the substring to locate.
  *
- * Return: Pointer to the beginning of the located substring, or NULL if the
- *         substring is not found.
+ * Return: Always 0 (Success)
  */
 char *_strstr(char *haystack, char *needle)
 {
-	char *h, *n;
-
-	while (*haystack != '\0')
+	for (; *haystack != '\0'; haystack++)
 	{
-		h = haystack;
-		n = needle;
+		char *l = haystack;
+		char *p = needle;
 
-		while (*haystack == *n && *n != '\0')
+		while (*l == *p && *p != '\0')
 		{
-			haystack++;
-			n++;
+			l++;
+			p++;
 		}
 
-		if (*n == '\0')
-			return (h);
-
-		haystack = h + 1;
+		if (*p == '\0')
+			return (haystack);
 	}
 
-	return (NULL);
+	return (0);
 }
