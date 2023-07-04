@@ -10,27 +10,22 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int count = 0;
-	int locate;
+	unsigned int n = 0;
+	int num;
 
-	while (*s != '\0')
+	while (*s)
 	{
-		locate = 0;
-		while (*accept != '\0')
+		for (num = 0; accept[num]; num++)
 		{
-			if (*s == *accept)
+			if (*s == accept[num])
 			{
-				count++;
-				locate = 1;
+				n++;
 				break;
 			}
-			accept++;
+			else if (accept[num + 1] == '\0')
+				return (n);
 		}
-		if (locate == 0)
-			break;
 		s++;
-		accept -= count;
 	}
-
-	return (count);
+	return (n);
 }
