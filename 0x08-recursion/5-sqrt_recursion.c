@@ -15,7 +15,7 @@ int sqrt_check(int n, int num)
 	if (num * num > n)
 		return (-1);
 
-	return sqrt_check(n, num + 1);
+	return (sqrt_check(n, num + 1));
 }
 
 /**
@@ -29,5 +29,5 @@ int _sqrt_recursion(int n)
 	if (n < 0)
 		return (-1);
 
-	return sqrt_check(n, 0);
+	return (sqrt_check(n, 0));
 }
