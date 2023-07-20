@@ -18,7 +18,7 @@ int sum_them_all(const unsigned int n, ...)
 	if (n == 0)
 	{
 		printf("No argument passed ");
-		return(0);
+		return (0);
 	}
 	else
 	{
@@ -26,13 +26,13 @@ int sum_them_all(const unsigned int n, ...)
 
 		int i, sum = 0;
 
-		for(i = 0; i < n; i++)
+		for (i = 0; i < n; i++)
 		{
 			sum = sum + va_arg(list, int);
 		}
 
 		va_end(list);
 
-		return(sum);
+		return (sum);
 	}
 }
