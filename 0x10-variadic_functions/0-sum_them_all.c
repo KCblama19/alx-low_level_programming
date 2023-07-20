@@ -9,16 +9,14 @@
  *
  * Return: sum of the parameters
  */
-int sum_them_all(const unsigned int n, ...);
 
 int sum_them_all(const unsigned int n, ...)
-{	
+{
 	va_list list;
 	unsigned int i, sum = 0;
 
 	if (n == 0)
 	{
-		printf("No argument passed ");
 		return (0);
 	}
 
