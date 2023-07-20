@@ -20,19 +20,17 @@ int sum_them_all(const unsigned int n, ...)
 		printf("No argument passed ");
 		return (0);
 	}
-	else
+	
+	va_start(list, n);
+
+	unsigned int i, sum = 0;
+
+	for (i = 0; i < n; i++)
 	{
-		va_start(list, n);
-
-		int i, sum = 0;
-
-		for (i = 0; i < n; i++)
-		{
-			sum = sum + va_arg(list, int);
-		}
-
-		va_end(list);
-
-		return (sum);
+		sum = sum + va_arg(list, int);
 	}
+
+	va_end(list);
+
+	return (sum);
 }
