@@ -1,7 +1,8 @@
-#0x13. C - More singly linked lists
-###C Algorithm Data structure
+# 0x13. C - More singly linked lists
 
-##Tasks
+### C Algorithm Data structure
+
+## Tasks
 
 + **0. Print list** - Write a function that prints all the elements of a listint_t list.
 
@@ -19,18 +20,18 @@
 
 + **7. Get node at index** - Write a function that returns the nth node of a listint_t linked list.
 
-+ 8. Sum list - Write a function that returns the sum of all the data (n) of a listint_t linked list.
++ **8. Sum list** - Write a function that returns the sum of all the data (n) of a listint_t linked list.
 
-+ 9. Insert - Write a function that inserts a new node at a given position.
++ **9. Insert** - Write a function that inserts a new node at a given position.
 
-+ 10. Delete at index - Write a function that deletes the node at index index of a listint_t linked list.
++ **10. Delete at index** - Write a function that deletes the node at index index of a listint_t linked list.
 
-##Advanced Tasks
+## Advanced Tasks
 
-+ 11. Reverse list - Write a function that reverses a listint_t linked list.
++ **11. Reverse list** - Write a function that reverses a listint_t linked list.
 
-+ 12. Print (safe version) - Write a function that prints a listint_t linked list.
++ **12. Print (safe version)** - Write a function that prints a listint_t linked list.
 
-+ 13. Free (safe version) - Write a function that frees a listint_t list.
++ **13. Free (safe version)** - Write a function that frees a listint_t list.
 
-+ 14. Find the loop - Write a function that finds the loop in a linked list.
++ **14. Find the loop** - Write a function that finds the loop in a linked list.
