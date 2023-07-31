@@ -14,7 +14,7 @@
 
 + **4. Free list** - Write a function that frees a listint_t list.
 
-+ **5. Free - Write a function that frees a listint_t list.
++ **5. Free** - Write a function that frees a listint_t list.
 
 + **6. Pop** - Write a function that deletes the head node of a listint_t linked list, and returns the head node’s data (n).
 
